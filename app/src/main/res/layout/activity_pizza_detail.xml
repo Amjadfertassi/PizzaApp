@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".PizzaDetailActivity">
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+    <TextView
+        android:id="@+id/pizza_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="16sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="694dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Ingredients"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            <TextView
+                android:id="@+id/ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp" />
+            <TextView
+                android:id="@+id/textViewPreparationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preparation"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp" />
+            <TextView
+                android:id="@+id/preparation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="preparation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
